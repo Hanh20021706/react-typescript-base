@@ -8,6 +8,7 @@ import delayApp from "@Helpers/delay-app.tsx";
 import { resources } from "./language/language.ts";
 import i18next from "i18next";
 import { LANGUAGE } from "./constants/language.ts";
+import "./styles/global.css";
 
 const RouteRender = lazy(() =>
   delayApp(import("./app/router/render-router.tsx"))

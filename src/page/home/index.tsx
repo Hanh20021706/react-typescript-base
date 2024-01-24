@@ -7,13 +7,14 @@ const Home = () => {
   const { t } = useTranslation();
   return (
     <>
-      <h2>{t("home.title")}</h2>
+      <h2 className="text-orange-400">{t("home.title")}</h2>
       <p>{t("home.desc")}</p>
       <LanguageSelector />
       <Button />
       <div className="">
         <NavLink to={"/"}>home</NavLink>
         <NavLink to={"/products"}>products</NavLink>
+        <NavLink to={"/login"}>login</NavLink>
       </div>
     </>
   );
