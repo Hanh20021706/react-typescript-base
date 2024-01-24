@@ -19,9 +19,10 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      // "@App/*": ["src/@App/*"],
+      "@App/*": ["src/@app/*"],
       "@Component/*": ["src/components/*"],
-      "@Page/*": ["src/page/*"]
+      "@Page/*": ["src/page/*"],
+      "@Helpers/*": ["src/helpers/*"]
     }
   },
   "include": ["src"],
