@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { appRouter } from "src/app/router/router";
 
-const Login = () => {
+const SignUp = () => {
   const { t } = useTranslation();
   return (
     <div className="bg-blackRgba w-full h-[100vh] fixed flex justify-center items-center overflow-x-auto top-0 left-0 right-0 bottom-0">
@@ -21,14 +21,18 @@ const Login = () => {
             className="bg-translate placeholder:text-white text-white"
           />
           <Input
+            placeholder={t("user.email")}
+            className="bg-translate placeholder:text-white text-white"
+          />
+          <Input
             placeholder={t("user.password")}
             className="bg-translate placeholder:text-white text-white"
           />
-          <Button title={t("user.login")} />
+          <Button title={t("user.create")} />
           <div className="text-white flex justify-end gap-1">
-            <p>{t("user.dontHaveAccount")}</p>
-            <NavLink to={appRouter.SIGNUP} className={"text-yellow"}>
-              {t("user.createOn")}
+            <p>{t("user.alreadyCreate")}</p>
+            <NavLink to={appRouter.LOGIN} className={"text-yellow"}>
+              {t("user.login")}
             </NavLink>
           </div>
         </div>
@@ -37,4 +41,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;

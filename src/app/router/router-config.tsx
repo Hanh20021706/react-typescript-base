@@ -2,6 +2,7 @@ import Home from "@Page/home";
 import { appRouter } from "./router";
 import ProductPage from "@Page/products";
 import Login from "@Page/user/login";
+import SignUp from "@Page/user/sign-up";
 
 const routesConfig = [
   {
@@ -15,6 +16,10 @@ const routesConfig = [
   {
     path: appRouter.LOGIN,
     element: <Login />,
+  },
+  {
+    path: appRouter.SIGNUP,
+    element: <SignUp />,
   },
 ];
 
